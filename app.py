@@ -73,7 +73,7 @@ def webhook_get():
     
     if mode == 'subscribe' and token == WEBHOOK_VERIFY_TOKEN:
         logger.info("✅ Webhook verified!")
-        return challenge
+        return str(challenge)
     
     return 'Forbidden', 403
 
