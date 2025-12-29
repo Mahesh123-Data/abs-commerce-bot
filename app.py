@@ -16,6 +16,9 @@ WHATSAPP_API_URL = "https://graph.instagram.com/v18.0"
 PHONE_NUMBER_ID = os.getenv("PHONE_NUMBER_ID")
 ACCESS_TOKEN = os.getenv("ACCESS_TOKEN")
 WEBHOOK_VERIFY_TOKEN = os.getenv("WEBHOOK_VERIFY_TOKEN", "abs_webhook_token_123")
+@app.route('/')
+def home():
+    return "✅ ABS Commerce Bot LIVE!"
 
 ROADMAPS = {
     '1': {
